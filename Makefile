@@ -1,12 +1,16 @@
+CXX = c++
+CXXFLAGS = -std=c++11 -Wall -Wextra
+TARGET = my_raytracer
+
 all: run
 
 run: clean build execute
 
 clean:
-	rm -f image.ppm
+	rm -f image.ppm $(TARGET)
 
 build:
-	c++ main.cpp
+	$(CXX) $(CXXFLAGS) -o $(TARGET) main.cpp
 
 execute:
-	./a.out >> image.ppm
+	./$(TARGET) >> image.ppm
