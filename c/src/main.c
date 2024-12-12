@@ -34,7 +34,7 @@ int main()
 {
 	// image
 	double aspect_ratio = 16.0 / 9.0;
-	int image_width = 1080;
+	int image_width = 600;
 
 	// calculate image height
 	int image_height = (int)(image_width / aspect_ratio);
