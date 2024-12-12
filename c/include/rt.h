@@ -10,9 +10,6 @@
 # include "vec3.h"
 # include "ray.h"
 
-typedef t_vec t_color;
-typedef t_vec t_point3;
-
 void write_color(t_vec *pixel_color);
 t_color ray_color(const t_ray *r);
 

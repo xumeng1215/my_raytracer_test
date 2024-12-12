@@ -8,6 +8,9 @@ typedef struct s_vector
 	double z;
 } t_vec;
 
+typedef t_vec t_color;
+typedef t_vec t_point3;
+
 t_vec vec_init(double x, double y, double z);
 double vec_x(t_vec a);
 double vec_y(t_vec a);
