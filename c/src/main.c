@@ -21,13 +21,13 @@ t_color ray_color(const t_ray *r)
 	if (t > 0.0)
 	{
 		t_vec N = vec_unit(vec_sub(ray_at(*r, t), sphere_center));
-		return vec_mul(vec_add(N, vec_init(1, 1, 1)), 0.5);
+		return vec_mul(vec_add(N, vec_init(1, 1, 1)), 1.5);
 	}
 	// if (hit_sphere(&sphere_center, 0.5, r))
 	// 	return vec_init(1, 0, 0);
 	t_vec unit_direction = vec_unit(r->dir);
 	double a = 0.5 * (unit_direction.y + 1.0);
-	return vec_add(vec_mul(vec_init(0.5, 0.7, 1.0), a), vec_mul(vec_init(1, 1, 1), 1.0 - a));
+	return vec_add(vec_mul(vec_init(0.0, 0.7, 1.0), a), vec_mul(vec_init(1, 0, 0), 1.0 - a));
 }
 
 int main()
