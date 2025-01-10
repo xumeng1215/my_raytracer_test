@@ -1,0 +1,19 @@
+# ENVIRONMENT SETUP: 
+# Ambient lightning
+# <A> <ratio> <color>
+# Camera
+# <C> <coordinates> <vector> <fov>
+# Light
+# <L> <coordinates> <ratio> <color>
+
+# OBJS SETUP:
+# sphere
+# <sp> <center> <diameter> <color>
+# plane
+# <pl> <point> <vector> <color>
+# cylinder
+# <cy> <center> <vector> <diameter> <height> <color>
+
+# could be sep by lines or spaces
+# orders do not matter
+# ENVIRONMENT content can only be declared once with above form

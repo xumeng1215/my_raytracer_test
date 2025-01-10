@@ -121,8 +121,8 @@ private:
 
 		auto ray_origin = (defoucs_angle <= 0) ? center : defocus_disk_sample();
 		auto ray_direction = pixel_sample - ray_origin;
-
-		return ray(ray_origin, ray_direction);
+		auto ray_time = random_double();
+		return ray(ray_origin, ray_direction, ray_time);
 	}
 
 	color ray_color(const ray &r, int depth, const hittable &world) const
